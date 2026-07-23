@@ -26,7 +26,6 @@ resource "aws_internet_gateway" "main" {
   )
 }
 
-
 # Public Subnets
 resource "aws_subnet" "public" {
   count = length(var.public_subnet_cidrs)
